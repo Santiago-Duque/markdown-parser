@@ -24,10 +24,10 @@ public class MarkdownParseTest {
         String contents = Files.readString(fileName);
         assertEquals(List.of("https://nothing.com", "no-thing.html"), MarkdownParse.getLinks(contents));
     }
-    @Test
+    /*@Test
     public void tryGettingLinks3() throws IOException {
         Path fileName = Path.of("test-file3.md");
         String contents = Files.readString(fileName);
         assertEquals(List.of("awesome.com", "awe-some.html"), MarkdownParse.getLinks(contents));
-    }
+    }*/
 }
